@@ -1,0 +1,152 @@
+.clearfix {
+    clear: both;
+}
+
+.navbar {
+    position          : fixed;
+    border            : none;
+    -webkit-transition: 0.2s all linear;
+    transition        : 0.2s all linear;
+    height            : 50px;
+    width             : 58%;
+    padding-left      : 21%;
+    padding-right     : 21%;
+    top               : 30px;
+    z-index           : 1;
+
+    .navbar__logo {
+        float      : left;
+        margin     : 0;
+        padding-top: 5px;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            padding: 0;
+            margin : 4px 0;
+
+            li {
+                display: inline-block;
+                margin : 0 25px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    display        : block;
+                    text-decoration: none;
+                    color          : white;
+                }
+            }
+        }
+    }
+}
+
+.navbar-scrolled {
+    background-color: rgba(34,34,34,0.9);
+    color           : white;
+
+    a {
+        color: white;
+    }
+}
+
+.getapp {
+    color           : green;
+    background-color: white;
+    border          : none;
+    height          : 42px;
+    width           : 140px;
+    border-radius   : 30px;
+}
+
+main {
+    .about {
+        background-color   : rgb(46,204,113);
+        background-image   : url("../img/headerbg.png");
+        background-position: center;
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        width              : 58%;
+        padding-left       : 21%;
+        padding-right      : 21%;
+        height             : 900px;
+
+        .about__img--appicon {
+            padding-top: 165px;
+            width      : 111px;
+            height     : 111px;
+            position   : relative;
+            right      : 24px;
+        }
+
+        .about__img--phone {
+            float       : right;
+            padding-top : 134px;
+            padding-left: 130px;
+            position    : relative;
+            left        : 20px;
+        }
+
+        .about__img--appstore {
+            padding-right: 30px;
+        }
+    }
+
+    .features {
+        width        : 58%;
+        padding-left : 21%;
+        padding-right: 21%;
+        height       : 900px;
+
+        .features__phone {
+            float      : left;
+            padding-top: 92px;
+            position   : relative;
+            left       : -85px;
+        }
+
+        .features__text {
+            padding-top: 33%;
+        }
+    }
+
+    .reviews {
+        width        : 58%;
+        padding-left : 21%;
+        padding-right: 21%;
+        height       : 900px;
+
+        .reviews__text {
+            text-align : center;
+            padding-top: 122px;
+        }
+
+        .reviews__image {
+            padding-top: 100px;
+
+            .reviews__image--center {
+                position: relative;
+                left    : 360px;
+                z-index : 1;
+            }
+
+            .reviews__image--left {
+                position: relative;
+                right   : 238px;
+            }
+
+            .reviews__image--right {
+                position: relative;
+                left    : 12px;
+            }
+        }
+    }
+}
