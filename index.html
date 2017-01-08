@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Gabriel Ignatiuk - practice page 2</title>
+        <meta name="author" content="Gabriel Ignatiuk">
+        <meta name="description" content="practice page">
+        <meta name="keywords" content="practice page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo-text">FitApp</h1>
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Reviews</li>
+                    <li>Blog</li>
+                    <li>Support</li>
+                    <li>Get App</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="./img/appicon.png" alt="">
+                <h2>Helps you eat <span>better</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="./img/Appstore.png" alt="">
+                <img src="./img/Google Play.png" alt="">
+            </section>
+            <section>
+                <img src="./img/features.png" alt="">
+                <h2>Best calorie <span>counter app!<span></h2>
+            </section>
+            <section>
+                <h2>A simple way to <span>plan your diet!</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src=".img/phone-c.png" alt="">
+                <img src=".img/phone-l.png" alt="">
+                <img src=".img/phone-r.png" alt="">
+            </section>
+            <section>
+                <h2>Manage your <span>meal time</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="product-box">
+                    <img src="./img/product-u.png" alt="">
+                    <h3>Apple</h3>
+                    <p>Lorem ipsum dolor</p>
+                    <p>35g = 189KCAL</p>
+                    <p>01:00 PM</p>
+                </div>
+                <div class="product-box">
+                    <img src="./img/product-c.png" alt="">
+                    <h3>Sandwich</h3>
+                    <p>Lorem ipsum dolor</p>
+                    <p>35g = 189KCAL</p>
+                    <p>01:00 PM</p>
+                </div>
+                <div class="product-box">
+                    <img src="./img/product-d.png" alt="">
+                    <h3>Salad with chicken</h3>
+                    <p>Lorem ipsum dolor</p>
+                    <p>35g = 189KCAL</p>
+                    <p>01:00 PM</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Download, customize & enjoy!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button>Get App</button>
+        </footer>
+        <!-- SCRIPT FILES SECTION -->
+        <!-- jquery & iScroll -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- CLEAN SCRIPTS -->
+        <!-- SMOOTH SCROLL -->
+        <script>
+            (function($) {
+                'use strict';
+                // Można sprawdzić, czy scroll-behavior jest obsługiwane i jedynie wówczas dopinać skrypt
+                // if ( ! ( 'scroll-behavior' in getComputedStyle( document.documentElement ) ) ) {
+                // return;
+                // }
+
+                $('.scrollTo').on('click', function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href');
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top + 'px'
+                    }, 1500, function() {
+                        // Dodajemy hash do adresu
+                        location.hash = href;
+                    });
+                });
+
+            }(jQuery));
+        </script>
+    </body>
+
+</html>
+tml>
