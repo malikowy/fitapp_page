@@ -1,3 +1,6 @@
+$color-white: rgb(255,255,255);
+$color-green: rgb(46,204,200);
+
 .clearfix {
     clear: both;
 }
@@ -42,7 +45,7 @@
                 a {
                     display        : block;
                     text-decoration: none;
-                    color          : rgb(255,255,255);
+                    color          : $color-white;
                 }
             }
         }
@@ -51,16 +54,16 @@
 
 .navbar-scrolled {
     background-color: rgba(34,34,34,0.9);
-    color           : rgb(255,255,255);
+    color           : $color-white;
 
     a {
-        color: rgb(255,255,255);
+        color: $color-white;
     }
 }
 
 .getapp {
-    color           : rgb(46,204,113);
-    background-color: rgb(255,255,255);
+    color           : $color-green;
+    background-color: $color-white;
     border          : none;
     height          : 42px;
     width           : 140px;
@@ -96,7 +99,9 @@ main {
         }
 
         .about__text {
-            .about__text--colored {}
+            .about__text--colored {
+                color: $color-green;
+            }
         }
 
         .about__img--appstore {
@@ -161,26 +166,38 @@ main {
     }
 
     .blog {
-        .blog__text {
-            .blog__text--colored {}
-        }
+        height: 900px;
 
-        .blog__products {
-            .product-box {
-                .product-box--img {}
+        .blog__container {
+            width        : 58%;
+            padding-left : 21%;
+            padding-right: 21%;
 
-                .product-box--name {}
+            .blog__text {
+                .blog__text--colored {
+                    color: $color-green;
+                }
+            }
 
-                .product-box--description {}
+            .blog__products {
+                .product-box {
+                    .product-box--img {}
 
-                .product-box--kcal {}
+                    .product-box--name {}
 
-                .product-box--time {}
+                    .product-box--description {}
+
+                    .product-box--kcal {}
+
+                    .product-box--time {}
+                }
             }
         }
     }
 
     footer {
+        background-color: rgb(46,204,113);
+
         .footer__button {}
     }
 }
