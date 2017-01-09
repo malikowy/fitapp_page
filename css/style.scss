@@ -95,6 +95,10 @@ main {
             left        : 20px;
         }
 
+        .about__text {
+            .about__text--colored {}
+        }
+
         .about__img--appstore {
             padding-right: 30px;
         }
@@ -115,6 +119,8 @@ main {
 
         .features__text {
             padding-top: 33%;
+
+            .features__text--colored {}
         }
     }
 
@@ -152,5 +158,29 @@ main {
                 }
             }
         }
+    }
+
+    .blog {
+        .blog__text {
+            .blog__text--colored {}
+        }
+
+        .blog__products {
+            .product-box {
+                .product-box--img {}
+
+                .product-box--name {}
+
+                .product-box--description {}
+
+                .product-box--kcal {}
+
+                .product-box--time {}
+            }
+        }
+    }
+
+    footer {
+        .footer__button {}
     }
 }

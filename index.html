@@ -22,7 +22,7 @@
                     <li><a class="scrollTo" href="#reviews">Reviews</a></li>
                     <li><a class="scrollTo" href="#blog">Blog</a></li>
                     <li><a class="scrollTo" href="#footer">Support</a></li>
-                    <li><button class="getapp">Get App</button></li>
+                    <li><button class="getapp"><a href="#">Get App</a></button></li>
                 </ul>
             </nav>
         </header>
@@ -30,9 +30,11 @@
             <section class="about" id="about">
                 <img class="about__img--appicon" src="./img/appicon.png" alt="">
                 <img class="about__img--phone" src="./img/phone.png" alt="">
-                <h2>Helps you eat <span>better</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="about__text">
+                    <h2>Helps you eat <span class="about__text--colored">better</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
                 <img class="about__img--appstore" src="./img/Appstore.png" alt="">
                 <img class="about__img--googleplay" src="./img/Google Play.png" alt="">
                 <div class="clearfix"></div>
@@ -40,7 +42,7 @@
             <section class="features" id="features">
                 <img class="features__phone" src="./img/features.png" alt="">
                 <div class="features__text">
-                    <h2>Best calorie <span>counter app!<span></h2>
+                    <h2>Best calorie <span class="features__text--colored">counter app!<span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div class="clearfix"></div>
@@ -48,7 +50,7 @@
             <section class="reviews" id="reviews">
                 <div class="reviews__container">
                     <div class="reviews__text">
-                        <h2>A simple way to <span>plan your diet!</span></h2>
+                        <h2>A simple way to <span class="reviews__text--colored">plan your diet!</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
@@ -60,35 +62,39 @@
                 </div>
             </section>
             <section class="blog" id="blog">
-                <h2>Manage your <span>meal time</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="product-box">
-                    <img src="./img/product-u.png" alt="">
-                    <h3>Apple</h3>
-                    <p>Lorem ipsum dolor</p>
-                    <p>35g = 189KCAL</p>
-                    <p>01:00 PM</p>
+                <div class="blog__text">
+                    <h2>Manage your <span class="blog__text--colored">meal time</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="product-box">
-                    <img src="./img/product-c.png" alt="">
-                    <h3>Sandwich</h3>
-                    <p>Lorem ipsum dolor</p>
-                    <p>35g = 189KCAL</p>
-                    <p>01:00 PM</p>
-                </div>
-                <div class="product-box">
-                    <img src="./img/product-d.png" alt="">
-                    <h3>Salad with chicken</h3>
-                    <p>Lorem ipsum dolor</p>
-                    <p>35g = 189KCAL</p>
-                    <p>01:00 PM</p>
+                <div class="blog__products">
+                    <div class="product-box">
+                        <img class="product-box--img" src="./img/product-u.png" alt="">
+                        <h3 class="product-box--name">Apple</h3>
+                        <p class="product-box--description">Lorem ipsum dolor</p>
+                        <p class="product-box--kcal">35g = 189KCAL</p>
+                        <p class="product-box--time">01:00 PM</p>
+                    </div>
+                    <div class="product-box">
+                        <img class="product-box--img" src="./img/product-c.png" alt="">
+                        <h3 class="product-box--name">Sandwich</h3>
+                        <p class="product-box--description">Lorem ipsum dolor</p>
+                        <p class="product-box--kcal">35g = 189KCAL</p>
+                        <p class="product-box--time">01:00 PM</p>
+                    </div>
+                    <div class="product-box">
+                        <img class="product-box--img" src="./img/product-d.png" alt="">
+                        <h3 class="product-box--name">Salad with chicken</h3>
+                        <p class="product-box--description">Lorem ipsum dolor</p>
+                        <p class="product-box--kcal">35g = 189KCAL</p>
+                        <p class="product-box--time">01:00 PM</p>
+                    </div>
                 </div>
             </section>
         </main>
         <footer id="footer">
-            <h2>Download, customize & enjoy!</h2>
+            <h2>Download, customize &amp; enjoy!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button>Get App</button>
+            <button class="footer__button"><a href="#">Get App</a></button>
         </footer>
         <!-- SCRIPT FILES SECTION -->
         <!-- jquery & iScroll -->
