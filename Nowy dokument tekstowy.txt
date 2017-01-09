@@ -1,1 +1,17 @@
 t³o zielone rgb(46,204,113)
+
+
+logo Segoe UI Black Italic  39px
+menu Robot Regular
+menu app Robot Bold
+
+nag³owek Roboto Light i Bold 
+paragraph Robot Light
+
+nag³ówek2 Robot Light
+
+
+produkt nazwa Roboto Bold
+opis Robot Light
+waga Roboto Bold
+godzina Robot Bold
